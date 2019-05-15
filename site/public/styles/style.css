@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container header {
+    margin-bottom: 2em;
+}
+
+.container button {
+    font-size: 1em;
+}
+
+.container button:hover {
+    cursor: pointer;
+}
+
+.container button[type="submit"],
+.container button[type="reset"] {
+    margin-top: 1em;
+}
+
+#logo {
+    width: 64px;
+}
+
+#headliner {
+    width: 960px;
+}
+
+.logreg {
+    float: right;
+    margin-right: 40px;
+}
+
+.video_preview {
+    width: 468px;
+}
+
+.regform,
+.loginform {
+    margin: 3em;
+}
+
+.regform form label,
+.loginform form label {
+    margin-left: 1em;
+}

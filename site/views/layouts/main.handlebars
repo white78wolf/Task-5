@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <title>Game Cabin</title>
-    <style>
-        #logo{
-            width: 64px;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
-    <header><img id="logo" src="/img/logo.svg" alt="Logo"></header>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    {{{body}}}
+    <div class="container">
+        <header><img id="headliner" src="/img/headliner.png" alt="Headliner"></header>
+        <a href="/"><button type="button">Home</button></a>
+        <a href="/users"><button type="button">List of users</button></a>
+        <a href="/about"><button type="button">About</button></a>
+        <div class="logreg">
+            <a href="/login"><button type="button">Login</button></a>
+            <a href="/register"><button type="button">Registration</button></a>
+        </div>
+        {{{body}}}
+        <div>
+            <hr>
+            <footer>
+                <p>&copy; Andrey Tsepkov 2019</p>
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>

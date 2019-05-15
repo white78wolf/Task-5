@@ -1,0 +1,15 @@
+<div class="regform">
+    <h3>Register your account:</h3>
+    {{#if already}}
+    <span style="color:red;">User with this email already exist!</span>
+    {{/if}}
+    <form role="form" action="/register" method="POST">
+        <input type="text" name="name"><label for="name">Name</label><br>
+        <input type="text" name="surname"><label for="surname">Surname</label><br>
+        <input type="email" name="email"><label for="email">E-mail</label><br>
+        <input type="password" name="password"><label for="password">Your password (>= 6 characters)</label><br>
+        {{!-- <input type="password" name="repeat-pass"><label for="repeat-pass">Repeat your password</label><br> --}}
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</div>
