@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -19,26 +19,31 @@ body {
     cursor: pointer;
 }
 
-.container button[type="submit"],
-.container button[type="reset"] {
-    margin-top: 1em;
-}
-
-#logo {
-    width: 64px;
-}
-
 #headliner {
     width: 960px;
+    margin-bottom: 1em;
+}
+
+#username_message {
+    color: navy;
+    font-size: 1.2em;
+    margin-left: 1em;
 }
 
 .logreg {
     float: right;
-    margin-right: 40px;
+}
+
+.videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 .video_preview {
-    width: 468px;
+    width: 467px;
+    margin: 5px;
 }
 
 .regform,
@@ -49,4 +54,28 @@ body {
 .regform form label,
 .loginform form label {
     margin-left: 1em;
+}
+
+button[type='reset'], button[type='submit'] {
+    margin-top: 0.5em;
+}
+
+#list_of_users {    
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#list_of_users th,
+td {
+    padding: 5px;
+}
+
+#list_of_users th {
+    background-color: #677596;
+    color: white;
+    font-weight: 400;
+}
+
+#list_of_users td {
+    background-color: #faf2e4;
 }

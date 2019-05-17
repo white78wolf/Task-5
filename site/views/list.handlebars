@@ -1,6 +1,17 @@
 <h1>List of registered users:</h1>
-<ul>
+<table id="list_of_users">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
     {{#each users}}
-    <li>{{{this}}}</li> {{!-- TODO: представить данные в человеческом виде --}}
-    {{/each}}    
-</ul>
+        <tr>
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+            <td>{{email}}</td>
+            <td>{{password}}</td>
+        </tr>
+    {{/each}}
+</table>

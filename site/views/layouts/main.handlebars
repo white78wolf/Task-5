@@ -13,9 +13,16 @@
         <a href="/"><button type="button">Home</button></a>
         <a href="/users"><button type="button">List of users</button></a>
         <a href="/about"><button type="button">About</button></a>
+        {{#if user}}
+        <span id="username_message">You entered as {{user}}</span>    
+        {{/if}}
         <div class="logreg">
-            <a href="/login"><button type="button">Login</button></a>
+        {{#if user}}
+            <a href="/logout"><button type="button">Logout</button></a>
+        {{else}}
+            <a href="/login"><button type="button">Login</button></a>        
             <a href="/register"><button type="button">Registration</button></a>
+        {{/if}}
         </div>
         {{{body}}}
         <div>
